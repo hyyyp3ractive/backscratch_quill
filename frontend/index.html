@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Backscratch Quill - MFR Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Backscratch Quill – MFR Generator</h1>
+  <form id="mfrForm">
+    <label>Recipient: <input type="text" name="recipient" required /></label>
+    <label>Subject: <input type="text" name="subject" required /></label>
+    <label>Purpose: <input type="text" name="purpose" /></label>
+    <label>Justification: <textarea name="justification"></textarea></label>
+    <label>Requested Action: <input type="text" name="action" /></label>
+    <label>Point of Contact: <input type="text" name="poc" /></label>
+    <label>Signature Name: <input type="text" name="signature_name" /></label>
+    <label>Signature Title: <input type="text" name="signature_title" /></label>
+    <label>Generate with AI:
+      <select name="use_ai">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </label>
+    <button type="submit">Generate MFR</button>
+  </form>
+  <div id="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
